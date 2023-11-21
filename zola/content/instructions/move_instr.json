@@ -1,0 +1,138 @@
+{
+    "rows": [
+        {
+            "No.": "1.",
+            "Mnemonic": "\\( \\texttt{MOVAB} \\)",
+            "Opcode": "0b00000001",
+            "Total Cycles Number": "3",
+            "Description": "\\( \\texttt{REG_A} \\leftarrow \\texttt{REG_B} \\)"
+        },
+        {
+            "No.": "2.",
+            "Mnemonic": "\\( \\texttt{MOVBA} \\)",
+            "Opcode": "0b00000010",
+            "Total Cycles Number": "3",
+            "Description": "\\( \\texttt{REG_B} \\leftarrow \\texttt{REG_A} \\)"
+        },
+        {
+            "No.": "3.",
+            "Mnemonic": "\\( \\texttt{MOVAF} \\)",
+            "Opcode": "0b00000011",
+            "Total Cycles Number": "3",
+            "Description": "\\( \\texttt{REG_A} \\leftarrow \\texttt{REG_F} \\)"
+        },
+        {
+            "No.": "4.",
+            "Mnemonic": "\\( \\texttt{MOVBF} \\)",
+            "Opcode": "0b00000100",
+            "Total Cycles Number": "3",
+            "Description": "\\( \\texttt{REG_B} \\leftarrow \\texttt{REG_F} \\)"
+        },
+        {
+            "No.": "5.",
+            "Mnemonic": "\\( \\texttt{MOVATH} \\)",
+            "Opcode": "0b00000101",
+            "Total Cycles Number": "3",
+            "Description": "\\( \\texttt{REG_A} \\leftarrow \\texttt{REG_TMPH} \\)"
+        },
+        {
+            "No.": "6.",
+            "Mnemonic": "\\( \\texttt{MOVBTH} \\)",
+            "Opcode": "0b00000110",
+            "Total Cycles Number": "3",
+            "Description": "\\( \\texttt{REG_B} \\leftarrow \\texttt{REG_TMPH} \\)"
+        },
+        {
+            "No.": "7.",
+            "Mnemonic": "\\( \\texttt{MOVATL} \\)",
+            "Opcode": "0b00000111",
+            "Total Cycles Number": "3",
+            "Description": "\\( \\texttt{REG_A} \\leftarrow \\texttt{REG_TMPL} \\)"
+        },
+        {
+            "No.": "8.",
+            "Mnemonic": "\\( \\texttt{MOVBTL} \\)",
+            "Opcode": "0b00001000",
+            "Total Cycles Number": "3",
+            "Description": "\\( \\texttt{REG_B} \\leftarrow \\texttt{REG_TMPL} \\)"
+        },
+        {
+            "No.": "9.",
+            "Mnemonic": "\\( \\texttt{MOVTHA} \\)",
+            "Opcode": "0b00001001",
+            "Total Cycles Number": "3",
+            "Description": "\\( \\texttt{REG_TMPH} \\leftarrow \\texttt{REG_A} \\)"
+        },
+        {
+            "No.": "10.",
+            "Mnemonic": "\\( \\texttt{MOVTHB} \\)",
+            "Opcode": "0b00001010",
+            "Total Cycles Number": "3",
+            "Description": "\\( \\texttt{REG_TMPH} \\leftarrow \\texttt{REG_B} \\)"
+        },
+        {
+            "No.": "11.",
+            "Mnemonic": "\\( \\texttt{MOVTLA} \\)",
+            "Opcode": "0b00001011",
+            "Total Cycles Number": "3",
+            "Description": "\\( \\texttt{REG_TMPL} \\leftarrow \\texttt{REG_A} \\)"
+        },
+        {
+            "No.": "12.",
+            "Mnemonic": "\\( \\texttt{MOVTLB} \\)",
+            "Opcode": "0b00001100",
+            "Total Cycles Number": "3",
+            "Description": "\\( \\texttt{REG_TMPL} \\leftarrow \\texttt{REG_B} \\)"
+        },
+        {
+            "No.": "13.",
+            "Mnemonic": "\\( \\texttt{MOVAIMM} \\)",
+            "Opcode": "0b00001101",
+            "Total Cycles Number": "4",
+            "Description": "\\( \\texttt{REG_MAR} \\leftarrow \\texttt{PC} \\) <br> \\( \\texttt{REG_A} \\leftarrow \\texttt{MEM[REG_MAR]} \\) <br> \\( \\texttt{PC} \\leftarrow \\texttt{PC+1} \\)"
+        },
+        {
+            "No.": "14.",
+            "Mnemonic": "\\( \\texttt{MOVBIMM} \\)",
+            "Opcode": "0b00001110",
+            "Total Cycles Number": "4",
+            "Description": "\\( \\texttt{REG_MAR} \\leftarrow \\texttt{PC} \\) <br> \\( \\texttt{REG_B} \\leftarrow \\texttt{MEM[REG_MAR]} \\) <br> \\( \\texttt{PC} \\leftarrow \\texttt{PC+1} \\)"
+        },
+        {
+            "No.": "15.",
+            "Mnemonic": "\\( \\texttt{MOVAABS} \\)",
+            "Opcode": "0b00001111",
+            "Total Cycles Number": "8",
+            "Description": "\\( \\texttt{REG_MAR} \\leftarrow \\texttt{PC} \\) <br> \\( \\texttt{REG_TMPH} \\leftarrow \\texttt{MEM[REG_MAR]} \\) <br> \\( \\texttt{PC} \\leftarrow \\texttt{PC+1} \\) <br> \\( \\texttt{REG_MAR} \\leftarrow \\texttt{PC} \\) <br> \\( \\texttt{REG_TMPL} \\leftarrow \\texttt{MEM[REG_MAR]} \\) <br> \\( \\texttt{PC} \\leftarrow \\texttt{PC+1} \\) <br> \\( \\texttt{REG_MAR} \\leftarrow \\texttt{REG_TMP} \\) <br> \\( \\texttt{REG_A} \\leftarrow \\texttt{MEM[REG_MAR]} \\)"
+        },
+        {
+            "No.": "16.",
+            "Mnemonic": "\\( \\texttt{MOVBABS} \\)",
+            "Opcode": "0b00010000",
+            "Total Cycles Number": "8",
+            "Description": "\\( \\texttt{REG_MAR} \\leftarrow \\texttt{PC} \\) <br> \\( \\texttt{REG_TMPH} \\leftarrow \\texttt{MEM[REG_MAR]} \\) <br> \\( \\texttt{PC} \\leftarrow \\texttt{PC+1} \\) <br> \\( \\texttt{REG_MAR} \\leftarrow \\texttt{PC} \\) <br> \\( \\texttt{REG_TMPL} \\leftarrow \\texttt{MEM[REG_MAR]} \\) <br> \\( \\texttt{PC} \\leftarrow \\texttt{PC+1} \\) <br> \\( \\texttt{REG_MAR} \\leftarrow \\texttt{REG_TMP} \\) <br> \\( \\texttt{REG_B} \\leftarrow \\texttt{MEM[REG_MAR]} \\)"
+        },
+        {
+            "No.": "17.",
+            "Mnemonic": "\\( \\texttt{MOVABSA} \\)",
+            "Opcode": "0b00010001",
+            "Total Cycles Number": "8",
+            "Description": "\\( \\texttt{REG_MAR} \\leftarrow \\texttt{PC} \\) <br> \\( \\texttt{REG_TMPH} \\leftarrow \\texttt{MEM[REG_MAR]} \\) <br> \\( \\texttt{PC} \\leftarrow \\texttt{PC+1} \\) <br> \\( \\texttt{REG_MAR} \\leftarrow \\texttt{PC} \\) <br> \\( \\texttt{REG_TMPL} \\leftarrow \\texttt{MEM[REG_MAR]} \\) <br> \\( \\texttt{PC} \\leftarrow \\texttt{PC+1} \\) <br> \\( \\texttt{REG_MAR} \\leftarrow \\texttt{REG_TMP} \\) <br> \\( \\texttt{REG_MBR} \\leftarrow \\texttt{REG_A} \\) <br> \\( \\texttt{MEM[REG_MAR]} \\leftarrow \\texttt{REG_MBR} \\)"
+        },
+        {
+            "No.": "18.",
+            "Mnemonic": "\\( \\texttt{MOVABSB} \\)",
+            "Opcode": "0b00010010",
+            "Total Cycles Number": "8",
+            "Description": "\\( \\texttt{REG_MAR} \\leftarrow \\texttt{PC} \\) <br> \\( \\texttt{REG_TMPH} \\leftarrow \\texttt{MEM[REG_MAR]} \\) <br> \\( \\texttt{PC} \\leftarrow \\texttt{PC+1} \\) <br> \\( \\texttt{REG_MAR} \\leftarrow \\texttt{PC} \\) <br> \\( \\texttt{REG_TMPL} \\leftarrow \\texttt{MEM[REG_MAR]} \\) <br> \\( \\texttt{PC} \\leftarrow \\texttt{PC+1} \\) <br> \\( \\texttt{REG_MAR} \\leftarrow \\texttt{REG_TMP} \\) <br> \\( \\texttt{REG_MBR} \\leftarrow \\texttt{REG_B} \\) <br> \\( \\texttt{MEM[REG_MAR]} \\leftarrow \\texttt{REG_MBR} \\)"
+        },
+        {
+            "No.": "19.",
+            "Mnemonic": "\\( \\texttt{MOVABSIMM} \\)",
+            "Opcode": "0b00010011",
+            "Total Cycles Number": "10",
+            "Description": "\\( \\texttt{REG_MAR} \\leftarrow \\texttt{PC} \\) <br> \\( \\texttt{REG_TMPH} \\leftarrow \\texttt{MEM[REG_MAR]} \\) <br> \\( \\texttt{PC} \\leftarrow \\texttt{PC+1} \\) <br> \\( \\texttt{REG_MAR} \\leftarrow \\texttt{PC} \\) <br> \\( \\texttt{REG_TMPL} \\leftarrow \\texttt{MEM[REG_MAR]} \\) <br> \\( \\texttt{PC} \\leftarrow \\texttt{PC+1} \\) <br> \\( \\texttt{REG_MAR} \\leftarrow \\texttt{PC} \\) <br> \\( \\texttt{REG_MBR} \\leftarrow \\texttt{MEM[REG_MAR]} \\) <br> \\( \\texttt{PC} \\leftarrow \\texttt{PC+1} \\) <br> \\( \\texttt{REG_MAR} \\leftarrow \\texttt{REG_TMP} \\) <br> \\( \\texttt{MEM[REG_MAR]} \\leftarrow \\texttt{REG_MBR} \\)"
+        }
+    ]
+}
+  

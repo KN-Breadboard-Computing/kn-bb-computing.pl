@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Processor Instructions</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+
+<body id="main">
+
+    <header>
+        <h1>Processor Instructions Page</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Main Page</a></li>
+            <li><a href="/processor-organization">Processor Organization</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        {% set data = load_data(path="content/instructions/move_instr.csv", format="csv") -%}
+        <table class="instruction_table" border="1">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Mnemonic</th>
+                    <th>Opcode</th>
+                    <th>Total Cycles Number</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data["records"] %}
+                    <tr>
+                        <td style="padding: 1rem;">{{row[0]}}</td>
+                        <td style="padding: 1rem;">{{row[1]}}</td>
+                        <td style="padding: 1rem;">{{row[2]}}</td>
+                        <td style="padding: 1rem;">{{row[3]}}</td>
+                        <td style="padding: 1rem;">{{row[4] | safe}}</td>
+                    </tr> 
+                {% endfor %}
+            </tbody>
+        </table>
+
+
+        {{ page.content | safe }}
+    </main>
+
+    <footer>
+        <p>&copy; 2023 KN Breadboard Computing</p>
+    </footer>
+
+</body>
+
+</html>
