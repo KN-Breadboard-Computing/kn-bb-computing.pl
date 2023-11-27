@@ -1,0 +1,28 @@
+<div>
+    {% set data = load_data(path="static/instructions.json", format="json") %}
+
+    <table class="instruction_table" border="1">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Opcode</th>
+                <th>Description</th>
+                <th>Executed Microcodes</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for key, value in data %}
+                {% if start <= value["id"] and value["id"] < end %}
+                <tr>
+                    <td>{{value["id"]}}</td>
+                    <td class="center bold">{{value["name"]}}</td>
+                    <td class="center">{{value["opcode"]}}</td>
+                    <td>{{value["description"] | safe}}</td>
+                    <td>{{value["microcodes-description"] | safe}}</td>
+                </tr> 
+                {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

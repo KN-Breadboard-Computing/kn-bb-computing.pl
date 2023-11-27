@@ -5,9 +5,92 @@ body {
     margin: 1rem;
     margin-right: auto;
     margin-left: auto;
-    padding: 1rem
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+}
+
+.instruction_table, .instruction_table th, .instruction_table td {
+    border: 1px solid;
 }
 
 .instruction_table {
     width: 100%;
+    border-collapse: collapse;
+}
+
+.instruction_table th {
+    padding: 0.5rem;
+}
+
+.instruction_table td {
+    padding: 0.5rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0.2rem;
+}
+
+.navitem {
+    padding: 0.4rem;
+    margin: 1rem;
+    list-style-type: none;
+    border: 1px;
+    border-style: solid;
+    text-align: center;
+}
+
+.navitem a {
+    text-decoration: none;
+    color: black;
+    font-size: 12pt;
+    font-style: italic;
+}
+
+.navitem a:hover {
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.column60 {
+    flex: 60%;
+}
+
+.column40 {
+    flex: 40%;
+}
+
+.row p {
+    padding: 1rem;
+}
+
+.row img {
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 100%;
+    min-width: 10rem;
 }

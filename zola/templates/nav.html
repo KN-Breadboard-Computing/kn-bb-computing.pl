@@ -1,0 +1,28 @@
+{% set nav_list = 
+    [
+        "Main Page",
+        "Architecture Visualization",
+        "Processor Organization",
+        "Processor Instructions",
+    ] 
+%} 
+
+{% set nav_links = 
+    [
+        "/",
+        "/arch-vis",
+        "/proc-org",
+        "/proc-instr"
+    ] 
+%} 
+
+<ul class="navbar">
+    {% for item in nav_list %}
+        {% set link = nav_links[loop.index0] %} 
+        <li class="navitem">
+            <a href={{link}}>
+                {{item}}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
