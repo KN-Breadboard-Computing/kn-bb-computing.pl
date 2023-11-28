@@ -1,0 +1,141 @@
+body {
+    max-width: 60rem;
+    display: block;
+    float: none;
+    margin: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+}
+
+.instruction_table, .instruction_table th, .instruction_table td {
+    border: 1px solid;
+}
+
+.instruction_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.instruction_table th {
+    padding: 0.5rem;
+}
+
+.instruction_table td {
+    padding: 0.5rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0.2rem;
+}
+
+.navitem {
+    margin: 1rem;
+    list-style-type: none;
+    text-align: center;
+}
+
+.navitem a {
+    border: 1px;
+    border-style: solid;
+    box-shadow: 2px 2px black;
+    padding: 0.4rem;
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+
+.navitem a:hover {
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+.toc {
+    list-style-type: none;
+}
+.toc li {
+    list-style-type: none;
+    border-left: 2px solid #000;
+    margin-left: 1em;
+}
+.toc li span {
+    padding: 0.5rem;
+    padding-left: 2rem;
+    position: relative;
+    display: inline-block;
+}
+.toc li span a {
+    border: 1px;
+    border-style: solid;
+    box-shadow: 2px 2px black;
+    padding: 0.2rem;
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+.toc li span a:hover {
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+.toc li span::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: -2px;
+    bottom: 50%;
+    width: 1.75rem;
+    border: 2px solid #000;
+    border-top: 0 none transparent;
+    border-right: 0 none transparent;
+}
+.toc li:last-child {
+    border-left: 2px solid transparent;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.column60 {
+    flex: 60%;
+}
+
+.column40 {
+    flex: 40%;
+}
+
+.row p {
+    padding: 1rem;
+}
+
+.row img {
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 100%;
+    min-width: 10rem;
+}
