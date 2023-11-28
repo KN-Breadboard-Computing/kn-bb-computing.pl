@@ -49,23 +49,68 @@ body {
 }
 
 .navitem {
-    padding: 0.4rem;
     margin: 1rem;
     list-style-type: none;
-    border: 1px;
-    border-style: solid;
     text-align: center;
 }
 
 .navitem a {
+    border: 1px;
+    border-style: solid;
+    box-shadow: 2px 2px black;
+    padding: 0.4rem;
     text-decoration: none;
     color: black;
-    font-size: 12pt;
     font-style: italic;
 }
 
 .navitem a:hover {
+    color: white;
+    background-color: black;
     font-weight: bold;
+}
+
+.toc {
+    list-style-type: none;
+}
+.toc li {
+    list-style-type: none;
+    border-left: 2px solid #000;
+    margin-left: 1em;
+}
+.toc li span {
+    padding: 0.5rem;
+    padding-left: 2rem;
+    position: relative;
+    display: inline-block;
+}
+.toc li span a {
+    border: 1px;
+    border-style: solid;
+    box-shadow: 2px 2px black;
+    padding: 0.2rem;
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+.toc li span a:hover {
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+.toc li span::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: -2px;
+    bottom: 50%;
+    width: 1.75rem;
+    border: 2px solid #000;
+    border-top: 0 none transparent;
+    border-right: 0 none transparent;
+}
+.toc li:last-child {
+    border-left: 2px solid transparent;
 }
 
 .row {

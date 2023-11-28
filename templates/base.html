@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <title>Processor Instructions</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
@@ -22,6 +22,29 @@
     </nav>
     
     <main>
+        {% if page.toc %}
+        Table of contents
+            <ul class="toc">
+            {% for h1 in page.toc %}
+                <li>
+                    <span>
+                        <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+                    </span>
+                    {% if h1.children %}
+                        <ul>
+                            {% for h2 in h1.children %}
+                                <li>
+                                    <span>
+                                        <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+                                    </span>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </li>
+            {% endfor %}
+            </ul>
+        {% endif %}
         {% block content %}{% endblock content %}
     </main>
 
