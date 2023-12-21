@@ -1,0 +1,122 @@
+{
+    "MOV": {
+        "mnemonic": "MOV",
+        "arguments": "REG8, REG8/CONST8/MEM16/MEM8",
+        "description": "Move constant or value from memory or value from register to register"
+    },
+    "MOVAT": {
+        "mnemonic": "MOVAT",
+        "arguments": "MEM16/MEM8/REG16/REG8, REG8/CONST8",
+        "description": "Move constant or value from register to memory at some address"
+    },
+    "NEG": {
+        "mnemonic": "NEG",
+        "arguments": "REG8/MEM16/MEM8/STC, REG8",
+        "description": "Calculate negation of value from register and store it in register, memory or stack"
+    },
+    "ADD": {
+        "mnemonic": "ADD",
+        "arguments": "REG8/MEM16/MEM8/STC",
+        "description": "Calculate addition of REG_A with REG_B and store it in register, memory or stack"
+    },
+    "SUB": {
+        "mnemonic": "SUB",
+        "arguments": "REG8/MEM16/MEM8/STC, REG8/REG8/REG8/REG8, REG8/REG8/REG8/REG8",
+        "description": "Calculate subtraction of values from registers and store it in register, memory or stack"
+    },
+    "MUL2": {
+        "mnemonic": "MUL2",
+        "arguments": "REG8/MEM16/MEM8/STC, REG8",
+        "description": "Calculate multiplication by 2 of value from register and store it in register, memory or stack"
+    },
+    "DIV2": {
+        "mnemonic": "DIV2",
+        "arguments": "REG8/MEM16/MEM8/STC, REG8",
+        "description": "Calculate division by 2 of value from register and store it in register, memory or stack"
+    },
+    "INV": {
+        "mnemonic": "INV",
+        "arguments": "REG8/MEM16/MEM8/STC, REG8",
+        "description": "Calculate inversion of value from register and store it in register, memory or stack"
+    },
+    "OR": {
+        "mnemonic": "OR",
+        "arguments": "REG8/MEM16/MEM8/STC",
+        "description": "Calculate bitwise OR of REG_A with REG_B and store it in register, memory or stack"
+    },
+    "AND": {
+        "mnemonic": "AND",
+        "arguments": "REG8/MEM16/MEM8/STC",
+        "description": "Calculate bitwise AND of REG_A with REG_B and store it in register, memory or stack"
+    },
+    "XOR": {
+        "mnemonic": "XOR",
+        "arguments": "REG8/MEM16/MEM8/STC",
+        "description": "Calculate bitwise XOR of REG_A with REG_B and store it in register, memory or stack"
+    },
+    "SHR": {
+        "mnemonic": "SHR",
+        "arguments": "REG8/MEM16/MEM8/STC, REG8",
+        "description": "Calculate shift right of value from register and store it in register, memory or stack"
+    },
+    "SHL": {
+        "mnemonic": "SHL",
+        "arguments": "REG8/MEM16/MEM8/STC, REG8",
+        "description": "Calculate shift left of value from register and store it in register, memory or stack"
+    },
+    "CMP": {
+        "mnemonic": "CMP",
+        "arguments": "REG8, REG8",
+        "description": "Compare values from given registers and store result in REG_F"
+    },
+    "CLR": {
+        "mnemonic": "CLR",
+        "arguments": "REG8/REG16",
+        "description": "Clear given register"
+    },
+    "INC": {
+        "mnemonic": "INC",
+        "arguments": "REG8/REG16",
+        "description": "Increment given register"
+    },
+    "DEC": {
+        "mnemonic": "DEC",
+        "arguments": "REG8/REG16",
+        "description": "Decrement given register"
+    },
+    "JMPIMM": {
+        "mnemonic": "JMPIMM",
+        "arguments": "MEM16/REG16",
+        "description": "Jump directly to address given by constant or value from register"
+    },
+    "JMPREL": {
+        "mnemonic": "JMPREL",
+        "arguments": "CONST8/MEM8/REG16/MEM16",
+        "description": "Jump relative with offset given by constant or value from register or memory"
+    },
+    "PUSH": {
+        "mnemonic": "PUSH",
+        "arguments": "REG8/REG16/CONST8/MEM16/MEM8",
+        "description": "Push constant, value from register or memory to stack"
+    },
+    "POP": {
+        "mnemonic": "POP",
+        "arguments": "REG8/REG16/MEM16/MEM8",
+        "description": "Pop value from stack to register or memory"
+    },
+    "NOP": {
+        "mnemonic": "NOP",
+        "arguments": "-",
+        "description": "Do nothing for one cycle"
+    },
+    "SKIP": {
+        "mnemonic": "SKIP/SKIP1/SKIP2",
+        "arguments": "-",
+        "description": "Skip current/next/next two program instructions"
+    },
+    "HALT": {
+        "mnemonic": "HALT",
+        "arguments": "-",
+        "description": "Halt the program"
+    }
+}

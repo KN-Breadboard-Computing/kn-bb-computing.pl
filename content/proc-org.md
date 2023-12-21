@@ -2,6 +2,8 @@
 title = "Processor Organization Page"
 +++
 
+<br><br>
+
 ### Short Introduction
 The developed architecture is based on the von Neumann model. Its most important components are:
 - memory containing both the program code and its data

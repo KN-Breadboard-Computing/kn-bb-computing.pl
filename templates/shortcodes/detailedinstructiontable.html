@@ -1,5 +1,5 @@
 <div>
-    {% set data = load_data(path="static/instructions.json", format="json") %}
+    {% set data = load_data(path="static/all-instructions.json", format="json") %}
 
     <table class="instruction_table" border="1">
         <thead>
@@ -8,6 +8,7 @@
                 <th>Name</th>
                 <th>Opcode</th>
                 <th>Description</th>
+                <th>Total Cycles Number</th>
                 <th>Executed Microcodes</th>
             </tr>
         </thead>
@@ -19,6 +20,7 @@
                     <td class="center bold">{{value["name"]}}</td>
                     <td class="center">{{value["opcode"]}}</td>
                     <td>{{value["description"] | safe}}</td>
+                    <td class="center">{{value["total-mircocodes-number"]}}</td>
                     <td>{{value["microcodes-description"] | safe}}</td>
                 </tr> 
                 {% endif %}

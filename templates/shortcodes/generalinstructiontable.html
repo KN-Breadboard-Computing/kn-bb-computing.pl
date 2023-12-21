@@ -1,0 +1,22 @@
+<div>
+    {% set data = load_data(path="static/general-instructions.json", format="json") %}
+
+    <table class="instruction_table" border="1">
+        <thead>
+            <tr>
+                <th>Mnemonic</th>
+                <th>Arguments</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for key, value in data %}
+                <tr>
+                    <td class="center bold">{{value["mnemonic"]}}</td>
+                    <td class="center">{{value["arguments"]}}</td>
+                    <td class="center">{{value["description"]}}</td>
+                </tr> 
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
