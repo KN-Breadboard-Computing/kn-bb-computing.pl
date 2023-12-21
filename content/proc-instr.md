@@ -31,13 +31,13 @@ Fetching instruction:
 {{ detailedinstructiontable(start=0,end=49) }}
 
 #### ALU Instructions
-{{ detailedinstructiontable(start=49,end=162) }}
+{{ detailedinstructiontable(start=49,end=152) }}
 
 #### Jump Instructions
-{{ detailedinstructiontable(start=162,end=206) }}
+{{ detailedinstructiontable(start=152,end=196) }}
 
 #### Stack Instructions
-{{ detailedinstructiontable(start=206,end=221) }}
+{{ detailedinstructiontable(start=196,end=211) }}
 
 #### Other Instructions
-{{ detailedinstructiontable(start=221,end=257) }}
+{{ detailedinstructiontable(start=211,end=257) }}

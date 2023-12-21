@@ -24,11 +24,6 @@
         "arguments": "REG8/MEM16/MEM8/STC, REG8/REG8/REG8/REG8, REG8/REG8/REG8/REG8",
         "description": "Calculate subtraction of values from registers and store it in register, memory or stack"
     },
-    "MUL2": {
-        "mnemonic": "MUL2",
-        "arguments": "REG8/MEM16/MEM8/STC, REG8",
-        "description": "Calculate multiplication by 2 of value from register and store it in register, memory or stack"
-    },
     "DIV2": {
         "mnemonic": "DIV2",
         "arguments": "REG8/MEM16/MEM8/STC, REG8",
