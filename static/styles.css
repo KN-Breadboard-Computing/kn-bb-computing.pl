@@ -44,17 +44,17 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     padding: 0.2rem;
 }
 
-.navitem {
+.button {
     margin: 1rem;
     list-style-type: none;
     text-align: center;
 }
 
-.navitem a {
+.button a {
     border: 1px;
     border-style: solid;
     box-shadow: 2px 2px black;
@@ -64,10 +64,10 @@ body {
     font-style: italic;
 }
 
-.navitem a:hover {
+.button a:hover {
     color: white;
     background-color: black;
-    font-weight: bold;
+    font-weight: bold; 
 }
 
 .toc {

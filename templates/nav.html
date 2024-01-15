@@ -1,27 +1,33 @@
 {% set nav_list = 
     [
         "Main Page",
-        "Architecture Visualization",
         "Processor Organization",
         "Processor Instructions",
+        "Architecture Visualization (WIP)",
+        "Emulator (WIP)",
     ] 
 %} 
 
 {% set nav_links = 
     [
         "/",
-        "/arch-vis",
-        "/proc-org",
-        "/proc-instr"
+        "/proc-org/",
+        "/proc-instr/",
+        "/arch-vis/",
+        "/emulator/",
     ] 
 %} 
 
 <ul class="navbar">
     {% for item in nav_list %}
         {% set link = nav_links[loop.index0] %} 
-        <li class="navitem">
+        <li class="button">
             <a href={{link}}>
-                {{item}}
+                {% if page and page.path == link or section and section.path == link %}
+                    * {{item}} *
+                {% else %}
+                    {{item}}
+                {% endif %}
             </a>
         </li>
     {% endfor %}
