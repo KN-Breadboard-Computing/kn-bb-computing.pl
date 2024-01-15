@@ -2,9 +2,12 @@
 title = "Processor Instructions Page"
 +++
 
-
 ### Short Introduction
 The processor implements the **CISC** architecture: Complex Instruction Set Computing - each instruction is specialised and consist of few microinstructions. Each instruction has own 8-bit opcode so the maximum number of instructions is 256.
+
+{% button(link="/instructions.json") %}
+    Download instructions.json
+{% end %}
 
 ### Fetch-Decode-Execute Cycle
 - **Fetch:** Address of the next instruction is written from \\( \texttt{PC} \\) to \\(\texttt{MAR}\\). Word at this address in memory is written to \\( \texttt{REG_IR} \\).
