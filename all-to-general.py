@@ -213,6 +213,8 @@ if __name__ == '__main__':
                 export_instructions(f, 'SKIP/SKIP1/SKIP2', ['-'], f'Skip current/next/next two program instructions')
             elif key == 'SKIP1' or key == 'SKIP2':
                 pass # processed in SKIP
+            elif key == 'ISR':
+                export_instructions(f, key, ['-'], f' Push program counter to stack and set program counter to address of interrupt service routine')
             else:
                 print('ERROR: Unknown instruction', key)
             
