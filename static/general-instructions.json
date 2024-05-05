@@ -134,7 +134,13 @@
         "ISR": {
             "mnemonic": "ISR",
             "arguments":"-",
-            "description": " Push program counter to stack and set program counter to address of interrupt service routine"
+            "description": "Push program counter to stack, set program counter to address of interrupt service routine and start interrupt service routine"
+        },
+        
+        "IRET": {
+            "mnemonic": "IRET",
+            "arguments":"-",
+            "description": "Pop program counter from stack and exit interrupt service routine"
         },
         
         "HALT": {
