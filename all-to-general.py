@@ -16,6 +16,8 @@ def translate_argument(argument_name: str) -> str:
         return ['REG8', ['value from 8 bit register', '8 bit register']]
     elif argument_name == 'F':
         return ['REG8', ['value from 8 bit register', '8 bit register']]
+    elif argument_name == 'INT':
+        return ['REG8', ['value from 8 bit register', '8 bit register']]
     elif argument_name == 'TH':
         return ['REG8', ['value from 8 bit register', '8 bit register']]
     elif argument_name == 'TL':

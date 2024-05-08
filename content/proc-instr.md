@@ -32,16 +32,16 @@ Fetching instruction:
 
 ### Detailed Instruction Table
 #### Move Instructions
-{{ detailedinstructiontable(start=0,end=49) }}
+{{ detailedinstructiontable(start=0,end=56) }}
 
 #### ALU Instructions
-{{ detailedinstructiontable(start=49,end=152) }}
+{{ detailedinstructiontable(start=56,end=163) }}
 
 #### Jump Instructions
-{{ detailedinstructiontable(start=152,end=196) }}
+{{ detailedinstructiontable(start=163,end=207) }}
 
 #### Stack Instructions
-{{ detailedinstructiontable(start=196,end=211) }}
+{{ detailedinstructiontable(start=207,end=224) }}
 
 #### Other Instructions
-{{ detailedinstructiontable(start=211,end=257) }}
+{{ detailedinstructiontable(start=224,end=231) }}
