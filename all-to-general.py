@@ -219,6 +219,10 @@ if __name__ == '__main__':
                 export_instructions(f, key, ['-'], f'Push program counter to stack, set program counter to address of interrupt service routine and start interrupt service routine')
             elif key == 'IRET':
                 export_instructions(f, key, ['-'], f'Pop program counter from stack and exit interrupt service routine')
+            elif 'INT' in key:
+                if key[3:] == '0':
+                    key = 'INT'
+                    export_instructions(f, key[:3], ['-'], f'Triggers interrupt')
             else:
                 print('ERROR: Unknown instruction', key)
             

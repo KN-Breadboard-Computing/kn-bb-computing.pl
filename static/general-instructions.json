@@ -143,6 +143,12 @@
             "description": "Pop program counter from stack and exit interrupt service routine"
         },
         
+        "INT": {
+            "mnemonic": "INT",
+            "arguments":"-",
+            "description": "Triggers interrupt"
+        },
+        
         "HALT": {
             "mnemonic": "HALT",
             "arguments":"-",
