@@ -1,34 +1,47 @@
 {% set nav_list = 
     [
+        "Strona Główna",
+        "8-bitowe CPU",
+        "Blog",
+        "Kontakt"
+    ] 
+%} 
+
+{% set nav_list_en = 
+    [
         "Main Page",
-        "Processor Organization",
-        "Processor Instructions",
-        "Architecture Visualization (WIP)",
-        "Emulator (WIP)",
+        "8-bit CPU",
+        "Blog",
+        "Contact"
     ] 
 %} 
 
 {% set nav_links = 
     [
         "/",
-        "/proc-org/",
         "/proc-instr/",
-        "/arch-vis/",
-        "/emulator/",
+        "/blog/",
+        "/contact/"
     ] 
 %} 
 
 <ul class="navbar">
     {% for item in nav_list %}
-        {% set link = nav_links[loop.index0] %} 
+        {% if lang == "en" %}
+            {% set link = "/en" ~ nav_links[loop.index0] %}
+            {% set name = nav_list_en[loop.index0] %}  
+        {% else %}
+            {% set link = nav_links[loop.index0] %} 
+            {% set name = item %}
+        {% endif %}
         <li class="button">
             <a href={{link}}>
                 {% if page and page.path == link or section and section.path == link %}
-                    * {{item}} *
+                    * {{name}} *
                 {% else %}
-                    {{item}}
+                    {{name}}
                 {% endif %}
             </a>
         </li>
-    {% endfor %}
+        {% endfor %}
 </ul>
