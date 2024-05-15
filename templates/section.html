@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block header %}
+{{ section.title }}
+{% endblock header %}
+
+{% block content %}
+
+
+<ol class="bloglist">
+    {% for post in section.pages %}
+        <li class="blogitem">
+            {% if post.extra.image %}
+            <img class="blogitemimage" src="{{ post.extra.image }}" alt="">
+            {% else %}
+            <img class="blogitemimage" src="/placeholder.svg" alt="">
+            {% endif %}
+            <a href="{{ post.permalink }}" class="blogitembody">
+                <h2>{{ post.title }}</h2>
+                <p>{{ post.description }}</p>
+            </a>
+        </li>
+    {% endfor %}
+</ol>
+
+{% endblock content %}
