@@ -1,1 +1,1 @@
-# kn.breadboard.computing.github.io
+# Strona [kn-bb-computing.pl](https://kn-bb-computing.pl)
