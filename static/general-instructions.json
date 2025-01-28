@@ -103,8 +103,20 @@
         
         "JMPREL": {
             "mnemonic": "JMPREL",
-            "arguments":"CONST8/MEM8/REG16/MEM16",
+            "arguments":"CONST8/REG8",
             "description": "Jump relative with offset given by constant or value from register or memory"
+        },
+        
+        "JMPFUN": {
+            "mnemonic": "JMPFUN",
+            "arguments":"MEM16",
+            "description": "Push return address to stack and jump to function address given by constant"
+        },
+        
+        "JMPRET": {
+            "mnemonic": "JMPRET",
+            "arguments":"",
+            "description": "Pop return address from stack and jump to it"
         },
         
         "PUSH": {

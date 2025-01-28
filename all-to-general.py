@@ -192,6 +192,22 @@ if __name__ == '__main__':
                 available_arguments = [distinct_arguments(args) for args in available_arguments]
                 export_instructions(f, key, parse_arguments(available_arguments), 
                                     f'Jump relative with offset given by constant or value from register or memory')
+            elif key == 'JMPFUN':
+                available_arguments = [[]]
+                for args in distinct_arguments(value):
+                    if len(args) > 0:
+                        available_arguments[0].append(args[0])
+                available_arguments = [distinct_arguments(args) for args in available_arguments]
+                export_instructions(f, key, parse_arguments(available_arguments), 
+                                    f'Push return address to stack and jump to function address given by constant')
+            elif key == 'JMPRET':
+                available_arguments = [[]]
+                for args in distinct_arguments(value):
+                    if len(args) > 0:
+                        available_arguments[0].append(args[0])
+                available_arguments = [distinct_arguments(args) for args in available_arguments]
+                export_instructions(f, key, parse_arguments(available_arguments), 
+                                    f'Pop return address from stack and jump to it')
             elif key == 'PUSH':
                 available_arguments = [[]]
                 for args in distinct_arguments(value):
